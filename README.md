@@ -17,19 +17,19 @@ The package is both **Android** and **iOS** compatible.
 You can run example module by performing these steps:
 
 ```
-$ git clone git@github.com:wix/react-native-calendars.git
+$ git clone https://github.com/ZY-Market/react-native-calendars.git
 $ npm install
 $ react-native run-ios
 ```
 
-You can check example screens source code in [example module screens](https://github.com/wix-private/wix-react-native-calendar/tree/master/example/src/screens)
+You can check example screens source code in [example module screens](https://github.com/ZY-Market/react-native-calendars/tree/master/example/src/screens)
 
 This project is compatible with Expo/CRNA (without ejecting), and the examples have been [published on Expo](https://expo.io/@community/react-native-calendars-example)
 
 ## Installation
 
 ```
-$ npm install --save react-native-calendars
+$ npm install --save zy-react-native-calendars
 ```
 
 The solution is implemented in JavaScript so no native module linking is required.
@@ -57,7 +57,7 @@ Parameters that require date types accept `YYYY-MM-DD` formated `date-strings`, 
 Calendars can be localized by adding custom locales to `LocaleConfig` object:
 
 ```javascript
-import {LocaleConfig} from 'react-native-calendars';
+import {LocaleConfig} from 'zy-react-native-calendars';
 
 LocaleConfig.locales['fr'] = {
   monthNames: ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'],
@@ -157,7 +157,7 @@ Multi-Dot marking
 </kbd>
 <p></p>
 
-Use `markingType={'multi-dot'}` if you want to display more than one dot. Both the `<Calendar/>` and `<CalendarList/>` support multiple dots by using `dots` array in `markedDates` prop. 
+Use `markingType={'multi-dot'}` if you want to display more than one dot. Both the `<Calendar/>` and `<CalendarList/>` support multiple dots by using `dots` array in `markedDates` prop.
 The property `color` is mandatory while `key` and `selectedColor` are optional. If key is omitted then the array index is used as key. If `selectedColor` is omitted then `color` will be used for selected dates.
 
 ```javascript
@@ -356,11 +356,11 @@ The loading indicator next to the month name will be displayed if `<Calendar/>` 
 
 If you want to have complete control over the calendar styles you can do it by overriding default `style.js` files. For example, if you want to override `<CalendarHeader/>` style first you have to find stylesheet id for this file:
 
-https://github.com/wix/react-native-calendars/blob/master/src/calendar/header/style.js#L4
+https://github.com/ZY-Market/react-native-calendars/blob/master/src/calendar/header/style.js#L4
 
 In this case it is `stylesheet.calendar.header`. Next you can add overriding stylesheet to your theme with this id.
 
-https://github.com/wix/react-native-calendars/blob/master/example/src/screens/calendars.js#L56
+https://github.com/ZY-Market/react-native-calendars/blob/master/example/src/screens/calendars.js#L56
 
 ```javascript
 theme={{
@@ -540,6 +540,6 @@ See also the list of [contributors](https://github.com/wix/react-native-calendar
 
 ## Contributing
 
-Pull requests are most welcome! 
+Pull requests are most welcome!
 Please `npm run test` and `npm run lint` before push.
 Don't forget to add a **title** and a **description** that explain the issue you're trying to solve and your suggested solution. Screenshots and gifs are very helpful.
